@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.header h1 img{
+    vertical-align: middle;
+    height: 40px;
+}
+.header .menu{
+    display: flex;
+}
+.header .menu .menu-list{
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+}
+.header .menu .menu-list a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #3F5D45;
+    font-weight: bold;
+}
+.header ul .menu-shopcar{
+    margin-left: 80px;
+}
+.header ul .menu-shopcar a{
+    display: block;
+    line-height: 40px;
+}
+.header ul .menu-shopcar img{
+    vertical-align: middle;
+}
+
+.banner{
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.banner img{
+    vertical-align: middle;
+}
+
+.main{
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.sidebar{
+    width: 300px;
+    margin-right: 20px;
+}
+.sidebar h2,.sidebar a{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    display: block;
+    font-size: 24px;
+    line-height: 33px;
+    /* 或40px，33px比較偏正中間 */
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+.sidebar h2{
+    height: 65px;
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+.sidebar a{
+
+    height: 65px;
+    text-decoration: none;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+.sidebar a:hover{
+    background: #EAF0ED;
+}
+
+.productList{
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.productCard{
+    position: relative;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.productCard .productImg{
+    width: 300px;
+}
+.productCard .productName,.productCard .productPrice{
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 56px;
+    line-height: 56px;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+    color: #3F5D45;
+}
+.productCard .addtoCart{
+    box-sizing: border-box;
+    font-size: 24px;
+    display: block;
+    width: 300px;
+    height: 65px;
+    line-height: 65px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+    background: #EAF0ED;
+}
+.productName{
+    width: 173px;
+}
+.productPrice{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    width: 127px;
+}
+.addtoCollect{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.todaySelected{
+    font-size: 16px;
+    width: 36px;
+    height: 106px;
+    position: absolute;
+    left: 20px;
+    background: #3F5D45;
+}
+.todaySelected p{
+    margin: 10px;
+    line-height: 20px;
+    color: #EAF0ED;
+    font-weight: bold;
+}
+
+.pagination{
+    margin-top: 10px;
+    align-self:end;
+    display: flex;
+}
+.pagination img{
+    vertical-align: middle;
+}
+.pagination a{
+    box-sizing: border-box;
+    border: 1px solid #EAF0ED;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #3F5D45;
+}
+.page:hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+    font-weight: bold;
+}
+.pageArrow:hover{
+    background:#EAF0ED;
+}
